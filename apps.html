@@ -27,8 +27,7 @@
   .intro{color:var(--sub);margin:0 0 40px}
 
   .apps{display:flex;flex-direction:column;gap:28px}
-  .app{border:1px solid var(--line);border-radius:16px;padding:28px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:start}
-  .app>*{min-width:0}
+  .app{border:1px solid var(--line);border-radius:16px;padding:28px}
   .head{display:flex;gap:20px;align-items:center}
   .head img{width:96px;height:96px;border-radius:22px;flex:none;box-shadow:0 4px 14px rgba(0,0,0,.14)}
   .head h2{font-size:clamp(20px,3.2vw,26px);margin:0;font-weight:900;line-height:1.35}
@@ -43,23 +42,15 @@
   .store:hover{background:#2a2a2a}
   .legal{font-size:13px;color:var(--sub)}
   .legal a{margin-right:14px}
-  .shots{display:flex;gap:10px}
-  .shots img{width:132px;height:auto;border-radius:12px;border:1px solid var(--line);display:block}
 
   footer{padding:40px 0;font-size:13px;color:var(--sub);border-top:1px solid var(--line)}
   footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between}
   footer nav a{margin-right:20px}
 
-  @media (max-width:860px){
-    .app{grid-template-columns:1fr;gap:20px}
-    .shots{overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -28px;padding:0 28px}
-    .shots img{width:150px;flex:none;scroll-snap-align:start}
-  }
   @media (max-width:640px){
     header nav{display:none}
     main{padding:40px 0 56px}
     .app{padding:20px}
-    .shots{margin:0 -20px;padding:0 20px}
     .head{gap:14px}
     .head img{width:72px;height:72px;border-radius:16px}
   }
@@ -89,7 +80,6 @@
         <span class="legal"><a href="manzai/terms.html">利用規約</a><a href="manzai/privacy.html">プライバシーポリシー</a></span>
       </div>
     </div>
-    <div class="shots"><img src="img/apps/manzai-1.jpg" alt="俺の漫才の画面1" loading="lazy"><img src="img/apps/manzai-2.jpg" alt="俺の漫才の画面2" loading="lazy"><img src="img/apps/manzai-3.jpg" alt="俺の漫才の画面3" loading="lazy"></div>
   </article>
 
   <article class="app" id="sentou">
@@ -106,7 +96,6 @@
         <span class="legal"><a href="sentou/terms.html">利用規約</a><a href="sentou/privacy.html">プライバシーポリシー</a></span>
       </div>
     </div>
-    <div class="shots"><img src="img/apps/sentou-1.jpg" alt="俺の銭闘の画面1" loading="lazy"><img src="img/apps/sentou-2.jpg" alt="俺の銭闘の画面2" loading="lazy"><img src="img/apps/sentou-3.jpg" alt="俺の銭闘の画面3" loading="lazy"></div>
   </article>
 
   <article class="app" id="mma-owners">
@@ -123,7 +112,6 @@
         <span class="legal"><a href="mma-owners/terms.html">利用規約</a><a href="mma-owners/privacy.html">プライバシーポリシー</a></span>
       </div>
     </div>
-    <div class="shots"><img src="img/apps/mma-owners-1.jpg" alt="MMAオーナーズの画面1" loading="lazy"><img src="img/apps/mma-owners-2.jpg" alt="MMAオーナーズの画面2" loading="lazy"><img src="img/apps/mma-owners-3.jpg" alt="MMAオーナーズの画面3" loading="lazy"></div>
   </article>
 
 </div>
