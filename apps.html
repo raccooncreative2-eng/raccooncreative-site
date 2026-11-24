@@ -67,8 +67,10 @@
   // App Store のボタン：App Store アプリを直接呼ぶ（itms-apps）。0.8秒たってもページに残っていたら（止められた）、開き方の案内を出す
   document.addEventListener('DOMContentLoaded', function(){
     var box = document.createElement('div');
-    box.id = 'inapp-guide'; box.hidden = true;
-    box.setAttribute('style', 'position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.55);display:flex;align-items:flex-end;justify-content:center');
+    box.id = 'inapp-guide';
+    // 出す・隠すは style.display で切り替える（hidden の印は、style の display:flex に負けて効かない）
+    box.setAttribute('style', 'position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.55);display:none;align-items:flex-end;justify-content:center');
+    var show = function(on){ box.style.display = on ? 'flex' : 'none'; };
     box.innerHTML = '<div style="background:#fff;color:#16181d;width:100%;max-width:520px;border-radius:18px 18px 0 0;padding:22px 20px calc(22px + env(safe-area-inset-bottom));font-size:15px;line-height:1.7">'
       + '<b style="font-size:17px">App Store を開けませんでした</b>'
       + '<p style="margin:10px 0 0">このアプリの中のブラウザでは、App Store を開けないことがあります。次のどちらかで開いてください。</p>'
@@ -78,8 +80,8 @@
       + '<button id="inapp-close" type="button" style="flex:1;min-height:46px;border:1px solid #e3e5ea;border-radius:10px;background:#fff;color:#16181d;font:inherit;font-weight:700">閉じる</button></div></div>';
     document.body.appendChild(box);
     var name = '';
-    document.getElementById('inapp-close').onclick = function(){ box.hidden = true; };
-    box.onclick = function(e){ if (e.target === box) box.hidden = true; };
+    document.getElementById('inapp-close').onclick = function(){ show(false); };
+    box.onclick = function(e){ if (e.target === box) show(false); };
     document.getElementById('inapp-copy').onclick = function(){
       var b = this;
       try { navigator.clipboard.writeText(name).then(function(){ b.textContent = 'コピーしました'; }); } catch (e) {}
@@ -95,7 +97,7 @@
         var left = false, mark = function(){ if (document.hidden) left = true; };
         document.addEventListener('visibilitychange', mark);
         location.href = 'itms-apps://apps.apple.com/app/id' + m[1];
-        setTimeout(function(){ document.removeEventListener('visibilitychange', mark); if (!left && !document.hidden) box.hidden = false; }, 800);
+        setTimeout(function(){ document.removeEventListener('visibilitychange', mark); if (!left && !document.hidden) show(true); }, 800);
       });
     });
   });
