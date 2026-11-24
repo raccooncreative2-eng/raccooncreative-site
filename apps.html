@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>アプリ一覧 | Raccoon Creative Co., Ltd.</title>
+<meta name="description" content="ラクーンクリエイティブ株式会社（raccoon games）が App Store で配信しているゲームアプリの一覧です。">
+<link rel="icon" href="img/mma-owners-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#16181d;--sub:#5b606b;--line:#e3e5ea;--bg:#fff;--soft:#f5f6f8;--red:#c8161d}
+  *{box-sizing:border-box}
+  html{touch-action:manipulation}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans JP",system-ui,sans-serif;line-height:1.8;font-size:16px;-webkit-text-size-adjust:100%}
+  a{color:inherit}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+  header{border-bottom:1px solid var(--line)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+  .logo{font-family:"Oswald",sans-serif;font-weight:700;letter-spacing:.04em;font-size:18px;text-decoration:none}
+  header nav a{text-decoration:none;font-size:14px;color:var(--sub);margin-left:22px}
+  header nav a[aria-current]{color:var(--ink);font-weight:700}
+  main{padding:56px 0 80px}
+  .label{font-family:"Oswald",sans-serif;font-size:13px;letter-spacing:.2em;color:var(--red);margin:0 0 6px}
+  h1{font-size:clamp(26px,5vw,34px);margin:0 0 8px;font-weight:900}
+  .intro{color:var(--sub);margin:0 0 40px}
+
+  .apps{display:flex;flex-direction:column;gap:28px}
+  .app{border:1px solid var(--line);border-radius:16px;padding:28px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:start}
+  .app>*{min-width:0}
+  .head{display:flex;gap:20px;align-items:center}
+  .head img{width:96px;height:96px;border-radius:22px;flex:none;box-shadow:0 4px 14px rgba(0,0,0,.14)}
+  .head h2{font-size:clamp(20px,3.2vw,26px);margin:0;font-weight:900;line-height:1.35}
+  .head h2 small{display:block;font-size:13px;color:var(--sub);font-weight:500;margin-top:2px}
+  .catch{font-weight:700;margin:18px 0 6px}
+  .desc{color:#2c2f36;margin:0}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 0;padding:0;list-style:none}
+  .tags li{font-size:12.5px;border:1px solid var(--line);border-radius:999px;padding:1px 12px;color:var(--sub)}
+  .act{display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;margin-top:22px}
+  .store{display:inline-flex;align-items:center;gap:10px;background:#111;color:#fff;text-decoration:none;border-radius:12px;padding:10px 20px;min-height:48px;font-weight:700}
+  .store svg{width:20px;height:20px;flex:none}
+  .store:hover{background:#2a2a2a}
+  .legal{font-size:13px;color:var(--sub)}
+  .legal a{margin-right:14px}
+  .shots{display:flex;gap:10px}
+  .shots img{width:132px;height:auto;border-radius:12px;border:1px solid var(--line);display:block}
+
+  footer{padding:40px 0;font-size:13px;color:var(--sub);border-top:1px solid var(--line)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between}
+  footer nav a{margin-right:20px}
+
+  @media (max-width:860px){
+    .app{grid-template-columns:1fr;gap:20px}
+    .shots{overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -28px;padding:0 28px}
+    .shots img{width:150px;flex:none;scroll-snap-align:start}
+  }
+  @media (max-width:640px){
+    header nav{display:none}
+    main{padding:40px 0 56px}
+    .app{padding:20px}
+    .shots{margin:0 -20px;padding:0 20px}
+    .head{gap:14px}
+    .head img{width:72px;height:72px;border-radius:16px}
+  }
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="logo" href="./">Raccoon Creative</a><nav><a href="./#game">ゲーム</a><a href="apps.html" aria-current="page">アプリ一覧</a><a href="./#news">お知らせ</a><a href="./#company">会社情報</a></nav></div></header>
+
+<main><div class="wrap">
+<p class="label">APPS</p>
+<h1>アプリ一覧</h1>
+<p class="intro">raccoon games が App Store で配信している iPhone 向けのゲームです。</p>
+
+<div class="apps">
+
+  <article class="app" id="manzai">
+    <div>
+      <div class="head">
+        <img src="img/manzai-icon.png" alt="俺の漫才のアイコン">
+        <h2>俺の漫才<small>-15年の漫才人生シミュレーション-</small></h2>
+      </div>
+      <p class="catch">15年の芸人シミュレーションゲーム</p>
+      <p class="desc">お笑い養成所に入った日から、15年。相方を選び、ネタを書き、劇場に立ち、年に一度の賞レース「サンパチグランプリ」の頂点を目指す。ネタの面白さは、数字では見えない。手がかりは、客の笑いとファンの声だけ。</p>
+      <ul class="tags"><li>基本無料</li><li>広告あり</li><li>アプリ内課金あり</li><li>iPhone</li><li>2026年11月 配信</li></ul>
+      <div class="act">
+        <a class="store" href="https://apps.apple.com/jp/app/id6837982644" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1 1-4 2.4-1.7 3-.4 7.4 1.2 9.8.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.1-.8 1.5 0 1.9.8 3.2.8 1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8 0 0-2.5-1-2.5-3.9zM14 5.5c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1.1.1 2.1-.6 2.8-1.4z"/></svg>App Store で見る</a>
+        <span class="legal"><a href="manzai/terms.html">利用規約</a><a href="manzai/privacy.html">プライバシーポリシー</a></span>
+      </div>
+    </div>
+    <div class="shots"><img src="img/apps/manzai-1.jpg" alt="俺の漫才の画面1" loading="lazy"><img src="img/apps/manzai-2.jpg" alt="俺の漫才の画面2" loading="lazy"><img src="img/apps/manzai-3.jpg" alt="俺の漫才の画面3" loading="lazy"></div>
+  </article>
+
+  <article class="app" id="sentou">
+    <div>
+      <div class="head">
+        <img src="img/sentou-icon.png" alt="俺の銭闘のアイコン">
+        <h2>俺の銭闘<small>-プロ野球年俸交渉シミュレーション-</small></h2>
+      </div>
+      <p class="catch">年俸を吊り上げろ！球団運営も育成もない新感覚野球ゲーム</p>
+      <p class="desc">試合はしない。育成もしない。戦う場所は、契約更改の席だけ。高校を出た18歳から引退まで、1人のプロ野球選手として、実力に見合う額をどれだけ上回れるか。最後に「銭闘力」で答え合わせ。</p>
+      <ul class="tags"><li>基本無料</li><li>広告あり</li><li>アプリ内課金あり</li><li>iPhone</li><li>2026年11月 配信</li></ul>
+      <div class="act">
+        <a class="store" href="https://apps.apple.com/jp/app/id6837396609" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1 1-4 2.4-1.7 3-.4 7.4 1.2 9.8.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.1-.8 1.5 0 1.9.8 3.2.8 1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8 0 0-2.5-1-2.5-3.9zM14 5.5c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1.1.1 2.1-.6 2.8-1.4z"/></svg>App Store で見る</a>
+        <span class="legal"><a href="sentou/terms.html">利用規約</a><a href="sentou/privacy.html">プライバシーポリシー</a></span>
+      </div>
+    </div>
+    <div class="shots"><img src="img/apps/sentou-1.jpg" alt="俺の銭闘の画面1" loading="lazy"><img src="img/apps/sentou-2.jpg" alt="俺の銭闘の画面2" loading="lazy"><img src="img/apps/sentou-3.jpg" alt="俺の銭闘の画面3" loading="lazy"></div>
+  </article>
+
+  <article class="app" id="mma-owners">
+    <div>
+      <div class="head">
+        <img src="img/mma-owners-icon.png" alt="MMAオーナーズのアイコン">
+        <h2>MMAオーナーズ<small>-総合格闘技団体経営シミュレーション-</small></h2>
+      </div>
+      <p class="catch">総合格闘技のプロモーターとなり、世界一に育てよう</p>
+      <p class="desc">小さな格闘技団体の社長になって、世界一の団体を目指そう。選手を集め、カードを組み、満員の会場で王者を生む。ライバルの11団体と競い合う、終わりのない格闘技の世界がここに。</p>
+      <ul class="tags"><li>基本無料</li><li>広告あり</li><li>アプリ内課金あり</li><li>iPhone</li><li>2026年11月 配信</li></ul>
+      <div class="act">
+        <a class="store" href="https://apps.apple.com/jp/app/id6836633994" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1 1-4 2.4-1.7 3-.4 7.4 1.2 9.8.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.1-.8 1.5 0 1.9.8 3.2.8 1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8 0 0-2.5-1-2.5-3.9zM14 5.5c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1.1.1 2.1-.6 2.8-1.4z"/></svg>App Store で見る</a>
+        <span class="legal"><a href="mma-owners/terms.html">利用規約</a><a href="mma-owners/privacy.html">プライバシーポリシー</a></span>
+      </div>
+    </div>
+    <div class="shots"><img src="img/apps/mma-owners-1.jpg" alt="MMAオーナーズの画面1" loading="lazy"><img src="img/apps/mma-owners-2.jpg" alt="MMAオーナーズの画面2" loading="lazy"><img src="img/apps/mma-owners-3.jpg" alt="MMAオーナーズの画面3" loading="lazy"></div>
+  </article>
+
+</div>
+<p class="intro" style="margin-top:36px">お問い合わせは、<a href="./#company">トップページの会社情報</a>をご覧ください。</p>
+</div></main>
+
+<footer><div class="wrap"><nav><a href="apps.html">アプリ一覧</a><a href="privacy.html">プライバシーポリシー</a><a href="terms.html">利用規約</a></nav><div>© 2026 Raccoon Creative Co., Ltd.</div></div></footer>
+</body>
+</html>
